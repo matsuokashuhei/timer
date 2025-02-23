@@ -3,8 +3,12 @@ edition = "2021"
 name = "backend"
 version = "0.1.0"
 
+[workspace]
+members = [".", "migration"]
+
 [dependencies]
 axum = { version = "0.8.1" }
+sea-orm = { version = "1.1.5" }
 serde_json = { version = "1.0.139" }
 tokio = { version = "1.43.0", features = ["full"] }
 tracing = { version = "0.1.41" }
