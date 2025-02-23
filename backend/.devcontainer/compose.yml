@@ -1,0 +1,9 @@
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: ./backend/Dockerfile
+      target: dev
+    command: sleep infinity
+    volumes:
+      - ../.:/timer
