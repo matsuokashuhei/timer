@@ -7,6 +7,8 @@ version = "0.1.0"
 members = [".", "migration"]
 
 [dependencies]
+async-graphql = { version = "7.0.15", features = ["chrono"] }
+async-graphql-axum = { version = "7.0.15" }
 axum = { version = "0.8.1" }
 sea-orm = { version = "1.1.5" }
 serde_json = { version = "1.0.139" }
