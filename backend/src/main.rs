@@ -1,5 +1,7 @@
 use axum::{http::StatusCode, routing::get, Router};
 
+mod domain;
+
 #[tokio::main]
 async fn main() {
     tracing_subscriber::fmt::init();
